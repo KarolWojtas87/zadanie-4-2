@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.container {
+  margin: 32px 108px;
+}
+
 /* Header */
 header {
   background-image: url(../images/background.png);
@@ -38,6 +42,10 @@ header {
   color: goldenrod;
 }
 
+.navigation ul li a:hover {
+  color: black;
+}
+
 .splash {
   text-align: center;
   color: white;
@@ -57,22 +65,51 @@ header {
 .splash .btn {
   margin: auto;
   min-width: 160px;
+  max-width: fit-content;
   padding: 12px;
   border-radius: 10px;
-  font-family: "Lato", sans-serif;
-  font-size: 32px;
   text-align: center;
-  text-decoration: none;
   cursor: pointer;
   border: none;
   background-color: goldenrod;
-  color: white;
 }
 
-.splash .btn:hover {
+.splash .btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  font-family: "Lato", sans-serif;
+}
+
+.splash .btn a:hover {
   color: gray;
 }
 
 /* Services */
+.service-title {
+  text-align: center;
+}
+
+.service-offer {
+  display: flex;
+}
+
+.service-offer i {
+  color: grey;
+  border: 2px solid grey;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 24px;
+  margin: auto;
+}
+
+.service-offer .service-element {
+  margin: 2px 12px;
+  max-width: 256px;
+}
+
+.service-offer h4 {
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */

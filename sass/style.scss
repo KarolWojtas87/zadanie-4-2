@@ -8,6 +8,11 @@ $f-curvy: 'Sansita Swashed', cursive;
 {
     box-sizing: border-box;
 }
+.container
+{
+    margin: 32px 108px;
+    
+}
 
 /* Header */
 header
@@ -41,6 +46,11 @@ header
             {
                 text-decoration: none;
                 color: goldenrod;
+
+                &:hover
+                {
+                    color: black;
+                }
             }
         }
     }
@@ -66,22 +76,57 @@ header
     {
         margin: auto;
         min-width: 160px;
+        max-width: fit-content;
         padding: 12px;
         border-radius: 10px;
-        font-family: $f-text;
-        font-size: 32px;
         text-align: center;
-        text-decoration: none;
         cursor: pointer;
         border: none;
         background-color: goldenrod;
-        color: white;
-
-        &:hover
+        
+        a 
         {
-            color: gray;
+            color: white;
+            text-decoration: none;
+            font-size: 32px;
+            font-family: $f-text;
+
+            &:hover
+            {
+                color: gray;
+            }
         }
     }
 }
 
 /* Services */
+.service-title
+{
+    text-align: center;
+}
+
+.service-offer
+{
+    display: flex;
+    
+    i 
+    {
+        color: grey;
+        border: 2px solid grey;
+        border-radius: 50%;
+        padding: 12px;
+        font-size: 24px;
+        margin: auto;
+    }
+
+    .service-element 
+    {
+        margin: 2px 12px;
+        max-width: 256px;
+    }
+
+    h4 
+    {
+        text-align: center;
+    }
+}
