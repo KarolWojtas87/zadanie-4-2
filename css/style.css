@@ -1,6 +1,5 @@
-/* Variables */
-/* Global */
-*, *::before, ::after {
-  box-sizing: border-box;
+body {
+  background: white;
 }
+
 /*# sourceMappingURL=style.css.map */
