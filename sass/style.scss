@@ -45,3 +45,43 @@ header
         }
     }
 }
+
+.splash
+{
+    text-align: center;
+    color: white;
+    font-family: $f-text;
+    h3 
+    {
+        margin-top: 150px;
+        font-size: 40px;
+        font-family: $f-curvy;
+    }
+    h1 
+    {
+        font-size: 75px;
+    }
+
+    .btn
+    {
+        margin: auto;
+        min-width: 160px;
+        padding: 12px;
+        border-radius: 10px;
+        font-family: $f-text;
+        font-size: 32px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        background-color: goldenrod;
+        color: white;
+
+        &:hover
+        {
+            color: gray;
+        }
+    }
+}
+
+/* Services */
