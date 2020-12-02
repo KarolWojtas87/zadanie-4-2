@@ -1,3 +1,47 @@
-body{
-    background: white;
+/* Variables */
+$f-fancy: 'Yellowtail', cursive;
+$f-text: 'Lato', sans-serif;
+$f-curvy: 'Sansita Swashed', cursive;
+
+/* Global */
+*, *::before, ::after 
+{
+    box-sizing: border-box;
+}
+
+/* Header */
+header
+{
+    background-image: url(../images/background.png);
+    height: 700px;
+    width: 1400px;
+}
+.company-name
+{
+    font-family: $f-fancy;
+    margin-left: 40px;
+    color: goldenrod;
+    font-size: 26px;
+}
+.navigation
+{
+    display: flex;
+    font-family: $f-text;
+
+    ul
+    {
+        display: flex;
+        margin: auto;
+        li
+        {
+            margin-left: 15px;
+            list-style-type: none;
+            
+            a
+            {
+                text-decoration: none;
+                color: goldenrod;
+            }
+        }
+    }
 }

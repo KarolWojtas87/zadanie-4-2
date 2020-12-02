@@ -1,5 +1,41 @@
-body {
-  background: white;
+/* Variables */
+/* Global */
+*, *::before, ::after {
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  background-image: url(../images/background.png);
+  height: 700px;
+  width: 1400px;
+}
+
+.company-name {
+  font-family: "Yellowtail", cursive;
+  margin-left: 40px;
+  color: goldenrod;
+  font-size: 26px;
+}
+
+.navigation {
+  display: flex;
+  font-family: "Lato", sans-serif;
+}
+
+.navigation ul {
+  display: flex;
+  margin: auto;
+}
+
+.navigation ul li {
+  margin-left: 15px;
+  list-style-type: none;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: goldenrod;
 }
 
 /*# sourceMappingURL=style.css.map */
