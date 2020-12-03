@@ -103,6 +103,18 @@ header
 .service-title
 {
     text-align: center;
+
+    h1 
+    {
+        font-family: $f-text;
+    }
+        
+    h3 
+    {
+        font-family: $f-curvy;
+        color: gray; 
+    }
+
 }
 
 .service-offer
@@ -123,10 +135,90 @@ header
     {
         margin: 2px 12px;
         max-width: 256px;
+
+        h4 
+        {
+            font-family: $f-text;
+        }
+        
+        p 
+        {
+            font-family: $f-curvy;
+            color: gray;
+        }
     }
 
     h4 
     {
         text-align: center;
+    }
+}
+
+/* Portfolio */
+.portfolio-title 
+{
+    text-align: center;
+    h1 
+    {
+        font-family: $f-text;
+    }
+    h3
+    {
+        font-family: $f-curvy;
+        color: gray;
+    }
+}
+.portfolio-parent
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    .portfolio-kid
+    {
+        width: 33.33%;
+        height: 100%;
+        float: left;
+
+        h4 
+        {
+            text-align: center;
+            font-family: $f-text;
+
+        }
+
+        p 
+        {
+            text-align: center;
+            font-family: $f-curvy;
+            color: gray;
+        }
+    }
+}
+
+/* Footer */
+footer 
+{
+    width: 100%;
+    display: flex;
+
+    .media
+    {
+        display: inline-block;
+        margin-left: 24px;
+        
+        i
+        {
+            font-size: 32px;
+            padding: 6px;
+            
+        }
+    }
+
+    .copyright 
+    {
+        font-family: $f-text;
+        font-size: 12px;
+        margin: auto;
+        width: 33.33%;
     }
 }
