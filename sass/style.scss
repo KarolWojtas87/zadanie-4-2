@@ -10,11 +10,17 @@ $f-curvy: 'Sansita Swashed', cursive;
 }
 .container
 {
-    margin: 32px 108px;
+    margin: 64px auto;
+}
+section 
+{
+    max-width: 1140px;
+    margin: 0 auto;
 }
 body
 {
     max-width: 1400px;
+    margin: 0 auto;
 }
 
 /* Header */
@@ -23,7 +29,7 @@ header
     background-image: url(../images/background.png);
     height: 700px;
     max-width: 1400px;
-    margin: 0 auto;
+    
 }
 .company-name
 {
@@ -124,6 +130,8 @@ header
 .service-offer
 {
     display: flex;
+    justify-content: space-between;
+    text-align: center;
     
     i 
     {
@@ -132,13 +140,13 @@ header
         border-radius: 50%;
         padding: 12px;
         font-size: 24px;
-        margin: auto;
+        margin: 0 auto;
     }
 
     .service-element 
     {
         margin: 2px 12px;
-        max-width: 256px;
+        width: 100%;
 
         h4 
         {
@@ -149,6 +157,7 @@ header
         {
             font-family: $f-curvy;
             color: gray;
+            padding: 0 20px;
         }
     }
 
@@ -176,37 +185,54 @@ header
 .portfolio-parent 
 {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
 
     .portfolio-kid 
     {
-        display: inline-block;
+        flex: 33,33%;
+        text-align: center;
+        margin: 12px;
+
+        h4 
+        {
+            font-family: $f-text;
+        }
+
+        p 
+        {
+            font-family: $f-curvy;
+            color: gray;
+        }
     }
 }
 
 /* Footer */
 footer 
 {
-    width: 100%;
     display: flex;
-
+    
     .copyright 
     {
-        display: inline-block;
-        width: 33.33%;
+        flex: 33.33%;
+        margin: 0 12px;
+        font-family: $f-text;
+        font-size: 12px;
     }
 
     .media
     {
-        display: inline-block;
+        flex: 66.66%;
         display: flex;
-        width: 66.66%;
         align-items: center;
-
-        .media-element 
+        
+        .media-element
         {
-            display: inline-block;
-            font-size: 32px; 
-            margin: 0 8px;
+            margin: 0 10px;
+            font-size: 32px;
+            border-radius: 50%;
         }
     }
 }
